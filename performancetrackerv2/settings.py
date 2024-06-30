@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'adminapi',
+    'managerapi',
+    'empapi', 
+    'teamleadapi',
 ]
 
 MIDDLEWARE = [

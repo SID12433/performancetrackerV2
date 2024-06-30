@@ -6,20 +6,18 @@ from adminapi.models import *
 class ManagerSerializer(serializers.ModelSerializer):
     class Meta:
         model=Manager
-        fields="__all__"
+        fields=["name","email_address","phoneno","home_address","job_title","position","department","prefferred_timezone","linkedin_profile","skills","certification","experience"]
         
 
 class TeamleadSerializer(serializers.ModelSerializer):
     class Meta:
         model=TeamLead
-        fields="__all__"
-
+        fields=["id","name","email_address","phoneno","home_address","job_title","position","department","prefferred_timezone","linkedin_profile","skills","certification","experience"]
     
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model=Employee
-        fields="__all__"
-        
+        fields=["id","name","email_address","phoneno","home_address","job_title","department","linkedin_profile","manager_name","resume","start_date","in_team"]        
 
 class MeetingSerializer(serializers.ModelSerializer):
     class Meta:
